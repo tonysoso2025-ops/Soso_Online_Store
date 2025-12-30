@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soso Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="logo">
+      <span>S</span><span>O</span><span>L</span><span>A</span><span>N</span><span>G</span><span>E</span>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" onclick="openCart()">🛒 Cart</button>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Soso Online Store</h1>
+      <p>Trendy • Affordable • Reliable</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/1.JPG" alt="Dera">
+        <h3>Dera</h3>
+        <p>15 000 FRW</p>
+        <button onclick="addToCart('Dress', 15000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/2.JPG" alt="Dress">
+        <h3>Dera</h3>
+        <p>15 000 FRW</p>
+        <button onclick="addToCart('Dress', 15000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/3.JPG" alt="Dera">
+        <h3>Dera</h3>
+        <p>15 000 FRW</p>
+        <button onclick="addToCart('Dera', 15000)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/4.JPG" alt="Dress">
+        <h3>Dera</h3>
+        <p>15 000 FRW</p>
+        <button onclick="addToCart('Dera', 15000)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Reach us directly through our social channels or WhatsApp:</p>
+
+    <div class="contact-social">
+      <div class="social-icons">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/250783611932" target="_blank" class="contact-link whatsapp">
+          <img src="images/l2.png" alt="WhatsApp" class="social-icon">
+          +250783611932
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.fb.com/l/6lp1kJRRR" target="_blank" class="contact-link facebook">
+          <img src="images/l1.png" alt="Facebook" class="social-icon">
+          Soso Online Store
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:usolange408@gmail.comm" class="contact-link email">
+          <img src="images/l4.png" alt="Email" class="social-icon">
+          usolange408@gmail.comm
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- CART MODAL -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <h3 id="totalPrice"></h3>
+      <a id="whatsappBtn" target="_blank" class="whatsapp-btn">Order via WhatsApp</a>
+      <button class="close-btn" onclick="closeCart()">Close</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Soso Online Store
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
